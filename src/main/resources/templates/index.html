@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>S3 파일 업로드 테스트</title>
+</head>
+<body>
+<h1>전체 리스트</h1> <hr>
+
+<div th:each="gallery:${galleries}">
+    <p th:text="${gallery.title}"></p>
+    <img th:src="${gallery.filePath}">
+</div>
+
+</body>
+</html>
